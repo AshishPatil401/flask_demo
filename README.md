@@ -1,2 +1,2 @@
-# python_b2
+# flask_demo
 For basic python programming practice.
