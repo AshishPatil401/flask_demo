@@ -69,16 +69,6 @@ def sum_operation_via_postman():
         return jsonify(result)
 
 
-@app.route('/concat', methods=['POST'])  # for calling the API from Postman/SOAPUI
-def math_concat():
-    if request.method == 'POST':
-        name = request.json['name']
-        emailid = request.json['emailid']
-        phonenumber = request.json['phonenumber']
-
-        return jsonify(name + emailid + str(phonenumber))
-
-
 @app.route('/sum_function')
 def url_test():
 
