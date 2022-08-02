@@ -55,7 +55,7 @@ def math_operation_via_postman():
         return jsonify(result)
 
 
-@app.route('/ashish', methods=['POST'])  # for calling the API from Postman/SOAPUI
+@app.route('/add_three_numbers', methods=['POST'])  # for calling the API from Postman/SOAPUI
 def sum_operation_via_postman():
     if request.method == 'POST':
         operation = request.json['operation']
