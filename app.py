@@ -55,7 +55,7 @@ def math_operation_via_postman():
         return jsonify(result)
 
 
-@app.route('/add_3_nums', methods=['POST'])  # for calling the API from Postman/SOAPUI
+@app.route('/add_three_numbers', methods=['POST'])  # for calling the API from Postman/SOAPUI
 def sum_operation_via_postman():
     if request.method == 'POST':
         operation = request.json['operation']
@@ -69,17 +69,7 @@ def sum_operation_via_postman():
         return jsonify(result)
 
 
-@app.route('/sudh', methods=['POST'])  # for calling the API from Postman/SOAPUI
-def math_sudh():
-    if request.method == 'POST':
-        name = request.json['name']
-        emailid = request.json['emailid']
-        phonenumber = request.json['phonenumber']
-
-        return jsonify(name + emailid + str(phonenumber))
-
-
-@app.route('/sudh_function')
+@app.route('/sum_function')
 def url_test():
 
     test1 = request.args.get('val1')
